@@ -6,8 +6,8 @@
 var map = function(arr, fn) {
 
     const res = [];
-    for(idx in arr) {
-        res.push(fn(arr[idx], parseInt(idx)));
+    for(let i=0; i<arr.length; i++) {
+        res.push(fn(arr[i], parseInt(i)));
     }
 
     return res;
