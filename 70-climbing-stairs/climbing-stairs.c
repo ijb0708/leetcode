@@ -1,7 +1,7 @@
 
 int climbStairs(int n) {
     
-    int cash[46] = {0, };
+    int cash[46];
     cash[1] = 1;
     cash[2] = 2;
 
