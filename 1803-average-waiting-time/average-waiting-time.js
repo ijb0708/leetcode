@@ -8,7 +8,6 @@ var averageWaitingTime = function(customers) {
     for(let customer of customers) {
         if(customer[0] > now) {
             now = customer[0];
-            console.log("1 : " + now);
         }
 
         now += customer[1];
