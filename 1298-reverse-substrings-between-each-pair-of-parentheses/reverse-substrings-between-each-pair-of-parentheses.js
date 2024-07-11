@@ -20,6 +20,6 @@ var reverseParentheses = function(s) {
         stack.push(s[i]);
     }
 
-    console.log(stack.join(""));
+    // console.log(stack.join(""));
     return stack.join("");
 };
