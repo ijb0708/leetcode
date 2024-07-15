@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y">Count Submatrices With Equal Frequency of X and Y</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given a 2D character matrix <code>grid</code>, where <code>grid[i][j]</code> is either <code>&#39;X&#39;</code>, <code>&#39;Y&#39;</code>, or <code>&#39;.&#39;</code>, return the number of <span data-keyword="submatrix">submatrices</span> that contains:</p>
+<h2><a href="https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y">Count Submatrices With Equal Frequency of X and Y</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given a 2D character matrix <code>grid</code>, where <code>grid[i][j]</code> is either <code>&#39;X&#39;</code>, <code>&#39;Y&#39;</code>, or <code>&#39;.&#39;</code>, return the number of <span data-keyword="submatrix">submatrices</span> that contain:</p>
 
 <ul>
 	<li><code>grid[0][0]</code></li>
