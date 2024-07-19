@@ -15,8 +15,6 @@ public:
             col[i] = maxIdx;
         }
 
-        for(int i=0; i<3; i++) cout<<col[i]<<" ";
-
         for(int i=0; i<matrix.size(); i++) {
             int minIdx = 0;
             for(int j=0; j<matrix[0].size(); j++) {
