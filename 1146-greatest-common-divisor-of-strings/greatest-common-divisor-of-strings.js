@@ -10,7 +10,7 @@ var gcdOfStrings = function(str1, str2) {
     
     function gcd(a, b) {
         if(b==0) return a
-        return gcd(b, parseInt(a%b));
+        return gcd(b, a%b);
     }
     // console.log(gcd(10, 5))
     const gcdLen = gcd(str1.length, str2.length)
