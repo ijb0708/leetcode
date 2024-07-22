@@ -1,0 +1,12 @@
+# Write your MySQL query statement below
+# Write your MySQL query statement below
+select 
+        customer_id
+      , count(customer_id) count_no_trans
+from    Visits
+where   1=1
+and     visit_id not in (
+    select  visit_id
+    from    Transactions
+)
+group by customer_id;
