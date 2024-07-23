@@ -16,7 +16,6 @@ var productExceptSelf = function(nums) {
     // console.log(prefix);
 
     for(let i=n-2; i>=0; i--) {
-        console.log(nums[i]);
         suffix[i] = suffix[i+1] * nums[i+1];
     }
     // console.log(suffix);
