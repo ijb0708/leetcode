@@ -10,12 +10,8 @@ var moveZeroes = function(nums) {
             const temp = nums[p1];
             nums[p1] = nums[p2];
             nums[p2] = temp;
-            p1++;
         }
-        if(nums[p1] != 0 && nums[p2] == 0) {
-            p1++;
-        }
-        if(nums[p1] != 0 && nums[p2] != 0) {
+        if(!(nums[p1] == 0 && nums[p2] == 0)) {
             p1++;
         }
         p2++;
