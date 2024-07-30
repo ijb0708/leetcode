@@ -16,19 +16,13 @@ var minimumDeletions = function(s) {
         if(s[i] == 'b') cacheB[i] = cacheB[i-1] + 1;
         else cacheB[i] = cacheB[i-1];
     }
-    console.log(cacheA)
-    console.log(cacheB)
-
-    // const balancedBars = [0];
 
     let answer = 100001;
     
     answer = Math.min(answer, cacheA[s.length-1])
     for(let i=1; i<s.length; i++) {
         if(s[i-1] != s[i]) {
-            // balancedBars.push(i);
             answer = Math.min(answer, cacheB[i-1] + cacheA[s.length-1] - cacheA[i])
-            // answer = Math.min(answer, (i - cacheA[i]) + (s.length - i - cacheB[s.length] - cacheB[i]));
         }
     }
     answer = Math.min(answer, cacheB[s.length-1])
