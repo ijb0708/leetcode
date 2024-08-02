@@ -23,7 +23,7 @@ var minSwaps = function(nums) {
 
     for(let start=1; start<nums.length; start++) {
 
-        if(nums[start-1] == '1') currOneCount--;
+        currOneCount -= nums[start-1];
         while(end - start + 1 < totalOneCount) {
             currOneCount += nums[++end % nums.length];
         }
