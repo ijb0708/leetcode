@@ -8,17 +8,15 @@ var minSwaps = function(nums) {
 
     let totalOneCount = 0;
     for(const num of nums) {
-        if(num == '1')
-            totalOneCount++;
+        totalOneCount += num;
     }
     // console.log(totalOneCount);
 
-    let currOneCount = nums[0] == '1' ? 1 : 0;
+    let currOneCount = nums[0];
     let end=0;
 
     while(end + 1 < totalOneCount) {
-        if(nums[++end % nums.length] == '1')
-            currOneCount++;
+        currOneCount += nums[++end % nums.length];
     }
 
     answer = Math.min(answer, totalOneCount - currOneCount);
@@ -27,8 +25,7 @@ var minSwaps = function(nums) {
 
         if(nums[start-1] == '1') currOneCount--;
         while(end - start + 1 < totalOneCount) {
-            if(nums[++end % nums.length] == '1')
-                currOneCount++;
+            currOneCount += nums[++end % nums.length];
         }
 
         answer = Math.min(answer, totalOneCount - currOneCount);
