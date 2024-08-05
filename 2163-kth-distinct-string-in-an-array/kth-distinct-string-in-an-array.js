@@ -12,8 +12,6 @@ var kthDistinct = function(arr, k) {
         countMap[item]++;
     }
 
-    console.log(countMap);
-
     const arrFilter = arr.filter(function(item) {
         if(countMap[item] == 1)
             return true;
