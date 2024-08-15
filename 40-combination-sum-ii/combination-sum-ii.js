@@ -10,7 +10,7 @@ var combinationSum2 = function(candidates, target) {
     });
 
     function dfs(idx, arr, localTarget) {
-        console.log(arr, localTarget);
+        // console.log(arr, localTarget);/
         if(localTarget == 0) {
             answer.push([...arr])
         }
