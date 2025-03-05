@@ -3,12 +3,8 @@
  * @return {number}
  */
 var coloredCells = function(n) {
-    let answer = 1;
-    for(let i=0; i<n; i++) {
-        answer += 4 * i;
-    }
-    return answer;
-    // console.log(answer);
+    if(n==1) return 1;
+    return 2*n*(n-1)+1;
 };
 
 // 1                    = 1
