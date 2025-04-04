@@ -29,6 +29,6 @@ var lcaDeepestLeaves = function(root) {
         return [left[0] + 1, node];
     }
 
-    console.log(dfs(root)[1]);
+    // console.log(dfs(root)[1]);
     return dfs(root)[1];
 };
