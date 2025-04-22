@@ -52,19 +52,5 @@ var idealArrays = function(n, maxValue) {
         answer = (answer + res) % BigInt(MOD);
     }
 
-    // let x = 2900;
-    // let res = 1;
-    // while(x > 1) {
-    //     let p = sieve[x];
-    //     let e = 0;
-    //     while(x % p == 0) {
-    //         console.log(p);
-    //         x /= p;
-    //         e++;
-    //     }
-    //     res = (res * combTable[n + e - 1][e]) % MOD;
-    //     console.log(res % MOD);
-    // }
-
     return Number(answer);
 };
