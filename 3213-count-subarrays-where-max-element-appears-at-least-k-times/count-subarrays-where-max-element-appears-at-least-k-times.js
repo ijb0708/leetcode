@@ -33,7 +33,7 @@ var countSubarrays = function(nums, k) {
         if(nums[right] == maxElement) maxElementCount++;
         // left = 0;
         while(maxElementCount == k) {
-            console.log("left : ", left, "right : ", right);
+            // console.log("left : ", left, "right : ", right);
             if(nums[left] == maxElement) maxElementCount--;
             // answer++;
             // answer += (nums.length - right);
